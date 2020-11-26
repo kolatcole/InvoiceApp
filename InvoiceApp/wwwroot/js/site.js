@@ -70,12 +70,10 @@
 // Write your JavaScript code.
 $(document).ready(function () {
 
-    //$("#filterDate").mouseup(function () {
-
-    //    $("#filterDate").datepicker('setDate', new Date());
-    //    alert("works");
-    //});
-
+    $("#form").submit(function () {
+       alert("Invoice successfully created");
+   });
+    
     $("#filterDate").datepicker({
 
         onSelect: function () {
