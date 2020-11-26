@@ -1,0 +1,58 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+
+<form asp-action="Create" method="post">
+    <div>
+        <label>Description</label>
+        <input type="text" name="Description" id="desc" />
+    </div>
+    <div>
+        <label>Amount</label>
+        <input type="text" name="Amount" id="amt" />
+    </div>
+    <div>
+        <label>Invoice Date</label>
+        <input type="date" name="InvoiceDate" id="creationDate" />
+    </div>
+    <div>
+        <label>Delivery Date</label>
+        <input type="date" name="DeliveryDate" id="deliveryDate" />
+    </div>
+    <div>
+        <label>Settle Date</label>
+        <input type="date" name="SettleDate" id="settleDate" />
+    </div>
+    <div>
+        <label>VAT</label>
+        <input type="text" name="Vat" id="vat" />
+    </div>
+    <div>
+        <label>Currency</label>
+        <input type="text" name="Currency" id="currency" />
+    </div>
+    <div>
+        <label>Exchange Rate</label>
+        <input type="text" name="ExchangeRate" id="rate" />
+    </div>
+    <div>
+        <label>Client</label>
+        <input type="text" name="Client" id="client" />
+    </div>
+    <div>
+        <label>Order Number</label>
+        <input type="text" name="OrderNumber" id="orderNo" />
+    </div>
+    <div>
+        <label>Sales Agent</label>
+        <input type="text" name="SalesAgent" id="agent" />
+    </div>
+
+    <button type="submit" class="btn-danger">Generate Invoice</button>
+</form>
